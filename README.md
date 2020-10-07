@@ -22,4 +22,7 @@ The data is accessible through a REST API. Consult related documentation (https:
 
 App requires iOS 11.0 to support the backward compatibility and swift 4.0.
 
+#TDD
+Added testcases for view model 
+
 
