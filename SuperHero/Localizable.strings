@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  SuperHero
+
+  Created by Vibha Mangrulkar on 05/10/20.
+  Copyright © 2020 Vibha Mangrulkar. All rights reserved.
+*/
+
+// Dashboard
+
+"dashboard.title" = "SuperHero";
+
+//SuperHero Details
+"biography" = "Biography";
+"appearance" = "Appearance";
+"connections" = "Connections";
+"work" = "Work";
+"powerstats" = "Powerstats";
+
+//Bio
+"fullname" = "Full Name: ";
+"alteregos" = "Alter Egos: ";
+"aliases" = "Aliases: ";
+"pob" = "Place-of-Birth: ";
+"first-appearance" = "First Appearance: ";
+"publisher" = "Publisher: ";
+
+//Apperance
+"gender" = "Gender: ";
+"race" = "Race: ";
+"height" = "Height: ";
+"weight" = "Weight: ";
+"eye-color" = "Eye-Color: ";
+"hair-color" = "Hair-Color: ";
+
+//Connections
+"group-affiliation" = "Group Affiliation: ";
+"relatives" = "Relatives: ";
+
+//Work
+"occupation" = "Occupation: ";
+"base" = "Base: ";

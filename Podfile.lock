@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.2.2)
+  - Cuckoo (0.12.0)
+  - MBProgressHUD (1.2.0)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - SDWebImage (5.9.2):
+    - SDWebImage/Core (= 5.9.2)
+  - SDWebImage/Core (5.9.2)
+
+DEPENDENCIES:
+  - Cuckoo (= 0.12.0)
+  - MBProgressHUD (~> 1.2.0)
+  - Moya (~> 14.0)
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cuckoo
+    - MBProgressHUD
+    - Moya
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 814429acc853c6c54ff123fc3d2ef66803823ce0
+  Cuckoo: d30b6c149e52ffbcfe6b4a9543e4627d08947274
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  SDWebImage: 0b42b8719ab0c5257177d5894306e8a336b21cbb
+
+PODFILE CHECKSUM: a9abc64e6e9d3ff9bbfab236e270ee4378bca405
+
+COCOAPODS: 1.9.3

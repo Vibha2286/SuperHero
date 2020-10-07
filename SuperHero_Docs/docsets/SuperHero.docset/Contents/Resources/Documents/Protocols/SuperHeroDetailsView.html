@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SuperHeroDetailsView Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/SuperHeroDetailsView" class="dashAnchor"></a>
+    <a title="SuperHeroDetailsView Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SuperHero 1.0 Docs</a> (84% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SuperHero Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SuperHeroDetailsView Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DashboardTableViewCell.html">DashboardTableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DashboardViewController.html">DashboardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DashboardViewModel.html">DashboardViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HeroAPI.html">HeroAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SceneDelegate.html">SceneDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SuperHeroDetailsViewController.html">SuperHeroDetailsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SuperHeroDetailsViewModel.html">SuperHeroDetailsViewModel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SuperHeroAPI.html">SuperHeroAPI</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DashboardView.html">DashboardView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SuperHeroDetailsView.html">SuperHeroDetailsView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Appearance.html">Appearance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Appearance/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Biography.html">Biography</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Biography/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Connections.html">Connections</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Connections/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constant.html">Constant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Hero.html">Hero</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Hero/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Image.html">Image</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Powerstats.html">Powerstats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SuperHeroImages.html">SuperHeroImages</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Work.html">Work</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SuperHeroDetailsView</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SuperHeroDetailsView</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Super hero detail protocol to display detail view</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB11DetailsViewP14configureTitle5titleySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureTitle(title:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB11DetailsViewP14configureTitle5titleySS_tF">configureTitle(title:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display the screen title</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureTitle</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Title string</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB11DetailsViewP09configureB5Image5imagey10Foundation3URLV_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureHeroImage(image:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB11DetailsViewP09configureB5Image5imagey10Foundation3URLV_tF">configureHeroImage(image:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display hero image</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureHeroImage</span><span class="p">(</span><span class="nv">image</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>image url</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB11DetailsViewP18configureBiography3bioyAA0F0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureBiography(bio:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB11DetailsViewP18configureBiography3bioyAA0F0V_tF">configureBiography(bio:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display biography data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureBiography</span><span class="p">(</span><span class="nv">bio</span><span class="p">:</span> <span class="kt"><a href="../Structs/Biography.html">Biography</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bio</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>biography object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB11DetailsViewP19configureAppearance10appearanceyAA0F0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureAppearance(appearance:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB11DetailsViewP19configureAppearance10appearanceyAA0F0V_tF">configureAppearance(appearance:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display apperance data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureAppearance</span><span class="p">(</span><span class="nv">appearance</span><span class="p">:</span> <span class="kt"><a href="../Structs/Appearance.html">Appearance</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appearance</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>appearance object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB11DetailsViewP20configureConnections11connectionsyAA0F0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureConnections(connections:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB11DetailsViewP20configureConnections11connectionsyAA0F0V_tF">configureConnections(connections:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display connection data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureConnections</span><span class="p">(</span><span class="nv">connections</span><span class="p">:</span> <span class="kt"><a href="../Structs/Connections.html">Connections</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>connections</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>connection object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB11DetailsViewP13configureWork4workyAA0F0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureWork(work:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB11DetailsViewP13configureWork4workyAA0F0V_tF">configureWork(work:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display work data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureWork</span><span class="p">(</span><span class="nv">work</span><span class="p">:</span> <span class="kt"><a href="../Structs/Work.html">Work</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>work</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>work object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2020 Vibha Mangrulkar. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

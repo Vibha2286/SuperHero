@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SuperHeroDetailsViewController Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SuperHeroDetailsViewController" class="dashAnchor"></a>
+    <a title="SuperHeroDetailsViewController Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SuperHero 1.0 Docs</a> (84% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SuperHero Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SuperHeroDetailsViewController Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DashboardTableViewCell.html">DashboardTableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DashboardViewController.html">DashboardViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DashboardViewModel.html">DashboardViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HeroAPI.html">HeroAPI</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SceneDelegate.html">SceneDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SuperHeroDetailsViewController.html">SuperHeroDetailsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SuperHeroDetailsViewModel.html">SuperHeroDetailsViewModel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SuperHeroAPI.html">SuperHeroAPI</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImageView.html">UIImageView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DashboardView.html">DashboardView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SuperHeroDetailsView.html">SuperHeroDetailsView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Appearance.html">Appearance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Appearance/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Biography.html">Biography</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Biography/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Connections.html">Connections</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Connections/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constant.html">Constant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Hero.html">Hero</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Hero/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Image.html">Image</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Powerstats.html">Powerstats</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Result.html">Result</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SuperHeroImages.html">SuperHeroImages</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Work.html">Work</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SuperHeroDetailsViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SuperHeroDetailsViewController</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">SuperHeroDetailsViewController</span><span class="p">:</span> <span class="kt"><a href="../Protocols/SuperHeroDetailsView.html">SuperHeroDetailsView</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Controller to display the super hero detail screen</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)heroBlurImageView"></a>
+                    <a name="//apple_ref/swift/Property/heroBlurImageView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)heroBlurImageView">heroBlurImageView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Imageview object to display super hero blur image</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">heroBlurImageView</span><span class="p">:</span> <span class="kt">UIImageView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)heroImageView"></a>
+                    <a name="//apple_ref/swift/Property/heroImageView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)heroImageView">heroImageView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Imageview object to display super hero image</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">heroImageView</span><span class="p">:</span> <span class="kt">UIImageView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)heroFullNameLabel"></a>
+                    <a name="//apple_ref/swift/Property/heroFullNameLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)heroFullNameLabel">heroFullNameLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display super hero full name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">heroFullNameLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)publisherLabel"></a>
+                    <a name="//apple_ref/swift/Property/publisherLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)publisherLabel">publisherLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display super hero publisher</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">publisherLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)bioFullNameLabel"></a>
+                    <a name="//apple_ref/swift/Property/bioFullNameLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)bioFullNameLabel">bioFullNameLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display super hero bio full name</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">bioFullNameLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)biopublisherLabel"></a>
+                    <a name="//apple_ref/swift/Property/biopublisherLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)biopublisherLabel">biopublisherLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display super hero bio publisher</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">biopublisherLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)bioAlerEgosLabel"></a>
+                    <a name="//apple_ref/swift/Property/bioAlerEgosLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)bioAlerEgosLabel">bioAlerEgosLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display super hero bio egos</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">bioAlerEgosLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)bioAliasesLabel"></a>
+                    <a name="//apple_ref/swift/Property/bioAliasesLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)bioAliasesLabel">bioAliasesLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display super hero bio aliases</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">bioAliasesLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)bioPOBLabel"></a>
+                    <a name="//apple_ref/swift/Property/bioPOBLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)bioPOBLabel">bioPOBLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display bio POB</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">bioPOBLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)bioFirsAppearanceLabel"></a>
+                    <a name="//apple_ref/swift/Property/bioFirsAppearanceLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)bioFirsAppearanceLabel">bioFirsAppearanceLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display bio first appearance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">bioFirsAppearanceLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)biographyView"></a>
+                    <a name="//apple_ref/swift/Property/biographyView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)biographyView">biographyView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>View object to display the biography view</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">biographyView</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceGenderLabel"></a>
+                    <a name="//apple_ref/swift/Property/appearnceGenderLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceGenderLabel">appearnceGenderLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display appearance gender</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">appearnceGenderLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceRaceLabel"></a>
+                    <a name="//apple_ref/swift/Property/appearnceRaceLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceRaceLabel">appearnceRaceLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display appearance race</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">appearnceRaceLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceHeightLabel"></a>
+                    <a name="//apple_ref/swift/Property/appearnceHeightLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceHeightLabel">appearnceHeightLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display appearance height</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">appearnceHeightLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceWeightLabel"></a>
+                    <a name="//apple_ref/swift/Property/appearnceWeightLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceWeightLabel">appearnceWeightLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display appearance weight</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">appearnceWeightLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceEyeColorLabel"></a>
+                    <a name="//apple_ref/swift/Property/appearnceEyeColorLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceEyeColorLabel">appearnceEyeColorLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display appearance eye color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">appearnceEyeColorLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceHairColorLabel"></a>
+                    <a name="//apple_ref/swift/Property/appearnceHairColorLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceHairColorLabel">appearnceHairColorLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display appearance hair color</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">appearnceHairColorLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceView"></a>
+                    <a name="//apple_ref/swift/Property/appearnceView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)appearnceView">appearnceView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>View object to display appearance view</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">appearnceView</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)connectionGroupAffiliationLabel"></a>
+                    <a name="//apple_ref/swift/Property/connectionGroupAffiliationLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)connectionGroupAffiliationLabel">connectionGroupAffiliationLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display connection group affiliation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">connectionGroupAffiliationLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)connectionRelativesLabel"></a>
+                    <a name="//apple_ref/swift/Property/connectionRelativesLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)connectionRelativesLabel">connectionRelativesLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display connection relatives</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">connectionRelativesLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)connectionView"></a>
+                    <a name="//apple_ref/swift/Property/connectionView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)connectionView">connectionView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>View object to display connection view</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">connectionView</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)workOccupationLabel"></a>
+                    <a name="//apple_ref/swift/Property/workOccupationLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)workOccupationLabel">workOccupationLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display work occupation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">workOccupationLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)workBaseLabel"></a>
+                    <a name="//apple_ref/swift/Property/workBaseLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)workBaseLabel">workBaseLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label object to display work base</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">workBaseLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)workView"></a>
+                    <a name="//apple_ref/swift/Property/workView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(py)workView">workView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>View object to display work view</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">workView</span><span class="p">:</span> <span class="kt">UIView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB21DetailsViewControllerC04heroC0AA6ResultVSgvp"></a>
+                    <a name="//apple_ref/swift/Property/heroDetails" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB21DetailsViewControllerC04heroC0AA6ResultVSgvp">heroDetails</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Result object to store the super hero result</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">heroDetails</span><span class="p">:</span> <span class="kt"><a href="../Structs/Result.html">Result</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB21DetailsViewControllerC12initWithData4datayAA6ResultV_tF"></a>
+                    <a name="//apple_ref/swift/Method/initWithData(data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB21DetailsViewControllerC12initWithData4datayAA6ResultV_tF">initWithData(data:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Convenience initializer for receive the result data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">initWithData</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Structs/Result.html">Result</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>result object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>View controller lifecycle method</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(im)ActionToShowAndHideBiography:"></a>
+                    <a name="//apple_ref/swift/Method/ActionToShowAndHideBiography(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(im)ActionToShowAndHideBiography:">ActionToShowAndHideBiography(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Action to show/hide biography of super hero</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="kt">ActionToShowAndHideBiography</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>any object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(im)ActionToShowAndHideAppearnce:"></a>
+                    <a name="//apple_ref/swift/Method/ActionToShowAndHideAppearnce(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(im)ActionToShowAndHideAppearnce:">ActionToShowAndHideAppearnce(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Action method to show/hide appearance</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="kt">ActionToShowAndHideAppearnce</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>any object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(im)ActionToShowAndHideConnections:"></a>
+                    <a name="//apple_ref/swift/Method/ActionToShowAndHideConnections(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(im)ActionToShowAndHideConnections:">ActionToShowAndHideConnections(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Action method to sho/hide connections</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="kt">ActionToShowAndHideConnections</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>any object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(im)ActionToShowAndHideWork:"></a>
+                    <a name="//apple_ref/swift/Method/ActionToShowAndHideWork(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@SuperHero@objc(cs)SuperHeroDetailsViewController(im)ActionToShowAndHideWork:">ActionToShowAndHideWork(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Action method to show/hide work</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="kt">ActionToShowAndHideWork</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">Any</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>any object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB21DetailsViewControllerC14configureTitle5titleySS_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureTitle(title:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB21DetailsViewControllerC14configureTitle5titleySS_tF">configureTitle(title:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display the screen title</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureTitle</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Title string</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB21DetailsViewControllerC09configureB5Image5imagey10Foundation3URLV_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureHeroImage(image:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB21DetailsViewControllerC09configureB5Image5imagey10Foundation3URLV_tF">configureHeroImage(image:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display hero image</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureHeroImage</span><span class="p">(</span><span class="nv">image</span><span class="p">:</span> <span class="kt">URL</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>image</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>image url</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB21DetailsViewControllerC18configureBiography3bioyAA0G0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureBiography(bio:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB21DetailsViewControllerC18configureBiography3bioyAA0G0V_tF">configureBiography(bio:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display biography data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureBiography</span><span class="p">(</span><span class="nv">bio</span><span class="p">:</span> <span class="kt"><a href="../Structs/Biography.html">Biography</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bio</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>biography object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB21DetailsViewControllerC19configureAppearance10appearanceyAA0G0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureAppearance(appearance:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB21DetailsViewControllerC19configureAppearance10appearanceyAA0G0V_tF">configureAppearance(appearance:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display apperance data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureAppearance</span><span class="p">(</span><span class="nv">appearance</span><span class="p">:</span> <span class="kt"><a href="../Structs/Appearance.html">Appearance</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>appearance</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>appearance object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB21DetailsViewControllerC20configureConnections11connectionsyAA0G0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureConnections(connections:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB21DetailsViewControllerC20configureConnections11connectionsyAA0G0V_tF">configureConnections(connections:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display connection data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureConnections</span><span class="p">(</span><span class="nv">connections</span><span class="p">:</span> <span class="kt"><a href="../Structs/Connections.html">Connections</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>connections</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>connection object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9SuperHero0aB21DetailsViewControllerC13configureWork4workyAA0G0V_tF"></a>
+                    <a name="//apple_ref/swift/Method/configureWork(work:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9SuperHero0aB21DetailsViewControllerC13configureWork4workyAA0G0V_tF">configureWork(work:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display work data</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">configureWork</span><span class="p">(</span><span class="nv">work</span><span class="p">:</span> <span class="kt"><a href="../Structs/Work.html">Work</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>work</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>work object</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2020 Vibha Mangrulkar. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.5</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
