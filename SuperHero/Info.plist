@@ -20,6 +20,21 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>RFS_Juan_Casco.ttf</string>
+		<string>hemi head bd it.ttf</string>
+		<string>AcariSans-Bold.ttf</string>
+		<string>AcariSans-BoldItalic.ttf</string>
+		<string>AcariSans-Italic.ttf</string>
+		<string>AcariSans-Light.ttf</string>
+		<string>AcariSans-LightItalic.ttf</string>
+		<string>AcariSans-Medium.ttf</string>
+		<string>AcariSans-MediumItalic.ttf</string>
+		<string>AcariSans-Regular.ttf</string>
+		<string>AcariSans-SemiBold.ttf</string>
+		<string>AcariSans-SemiBoldItalic.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -50,23 +65,6 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>RFS_Juan_Casco.ttf</string>
-		<string>hemi head bd it.ttf</string>
-		<string>AcariSans-Bold.ttf</string>
-		<string>AcariSans-BoldItalic.ttf</string>
-		<string>AcariSans-Italic.ttf</string>
-		<string>AcariSans-Light.ttf</string>
-		<string>AcariSans-LightItalic.ttf</string>
-		<string>AcariSans-Medium.ttf</string>
-		<string>AcariSans-MediumItalic.ttf</string>
-		<string>AcariSans-Regular.ttf</string>
-		<string>AcariSans-SemiBold.ttf</string>
-		<string>AcariSans-SemiBoldItalic.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
